@@ -32,7 +32,7 @@ function About() {
 
   const fetchNews = async () => {
     try {
-      const res = await axios.get("https://full-booking-3.onrender.com/read/New");
+      const res = await axios.get("https://hodan-7.onrender.com/read/New");
       setNews(res.data);
     } catch (error) {
       console.error("Failed to fetch news:", error);
@@ -77,7 +77,7 @@ function About() {
               data-aos-delay={index * 100}
             >
               <img
-                src={`https://full-booking-3.onrender.com/allImages/${item.prImage}`}
+                src={`https://hodan-7.onrender.com/allImages/${item.prImage}`}
                 alt={item.name}
                 className="w-full h-48 object-cover"
               />

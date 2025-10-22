@@ -17,7 +17,7 @@ function UpdateRoom() {
 
   const fetchRoom = async () => {
     try {
-      const res = await axios.get(`https://full-booking-3.onrender.com/readSingle/Room/${id}`);
+      const res = await axios.get(`https://hodan-7.onrender.com/readSingle/Room/${id}`);
       const room = Array.isArray(res.data) ? res.data[0] : res.data;
 
       if (!room) throw new Error("Room not found");
@@ -27,7 +27,7 @@ function UpdateRoom() {
       setPrice(room.price);
       setDescription(room.desc);
       setDetail(room.detail || "");
-      setPreview(`https://full-booking-3.onrender.com/allImages/${room.prImage}`);
+      setPreview(`https://hodan-7.onrender.com/allImages/${room.prImage}`);
     } catch (err) {
       console.error(err);
     }
@@ -51,7 +51,7 @@ function UpdateRoom() {
         formData.append("img", img); 
       }
 
-      await axios.put(`https://full-booking-3.onrender.com/update/Room/${id}`, formData, {
+      await axios.put(`https://hodan-7.onrender.com/update/Room/${id}`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 

@@ -8,7 +8,7 @@ function News() {
   // Fetch data
   const handleReadData = () => {
     axios
-      .get("https://full-booking-3.onrender.com/read/New")
+      .get("https://hodan-7.onrender.com/read/New")
       .then((res) => setData(res.data))
       .catch((err) => console.error("Error fetching data:", err));
   };
@@ -22,7 +22,7 @@ function News() {
     if (!window.confirm("Are you sure you want to delete this news item?")) return;
 
     axios
-      .delete(`https://full-booking-3.onrender.com/delete/New/${id}`)
+      .delete(`https://hodan-7.onrender.com/delete/New/${id}`)
       .then(() => {
         alert("News deleted successfully");
         handleReadData();
@@ -62,7 +62,7 @@ function News() {
                   <td className="py-3 px-4">{index + 1}</td>
                   <td className="py-3 px-4">
                     <img
-                      src={`https://full-booking-3.onrender.com/allImages/${items.prImage}`}
+                      src={`https://hodan-7.onrender.com/allImages/${items.prImage}`}
                       alt={items.name}
                       className="w-12 h-12 object-cover rounded-md border border-gray-300"
                     />
@@ -108,7 +108,7 @@ function News() {
             >
               <div className="flex items-center gap-4 mb-3">
                 <img
-                  src={`https://full-booking-3.onrender.com/allImages/${items.prImage}`}
+                  src={`https://hodan-7.onrender.com/allImages/${items.prImage}`}
                   alt={items.name}
                   className="w-16 h-16 object-cover rounded-lg border border-gray-300"
                 />

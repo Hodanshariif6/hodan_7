@@ -97,7 +97,7 @@ function Booking() {
     }
 
     try {
-      const res = await axios.post("https://full-booking-3.onrender.com/create/order", {
+      const res = await axios.post("https://hodan-7.onrender.com/create/order", {
         customer: {
           name: customerName,
           email: customerEmail,
@@ -189,7 +189,7 @@ function Booking() {
                 >
                   <td className="py-4 flex items-center gap-4">
                     <img
-                      src={`https://full-booking-3.onrender.com/allImages/${room.prImage?.trim()}`}
+                      src={`https://hodan-7.onrender.com/allImages/${room.prImage?.trim()}`}
                       alt={room.name}
                       className="w-20 h-16 object-cover rounded-lg shadow-sm"
                     />

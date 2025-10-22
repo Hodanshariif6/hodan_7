@@ -20,7 +20,7 @@ function AddNews() {
     formData.append("img", img);
 
     axios
-      .post("https://full-booking-3.onrender.com/create/New", formData)
+      .post("https://hodan-7.onrender.com/create/New", formData)
       .then(() => {
         toast.success("News added successfully 🚀");
         setTimeout(() => {

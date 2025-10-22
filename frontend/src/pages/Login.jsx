@@ -27,10 +27,10 @@ function Login() {
 
     try {
       // 1️⃣ First try admin login
-      let response = await axios.post("https://full-booking-3.onrender.com/login/admin", formData)
+      let response = await axios.post("https://hodan-7.onrender.com/login/admin", formData)
         .catch(async (adminErr) => {
           // 2️⃣ If admin fails, try customer login
-          return await axios.post("https://full-booking-3.onrender.com/login/customer", formData);
+          return await axios.post("https://hodan-7.onrender.com/login/customer", formData);
         });
 
       const { token, user, message } = response.data;

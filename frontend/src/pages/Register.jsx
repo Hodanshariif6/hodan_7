@@ -40,7 +40,7 @@ function Register() {
     setLoading(true);
 
     try {
-      const response = await axios.post("https://full-booking-3.onrender.com/register/customer", {
+      const response = await axios.post("https://hodan-7.onrender.com/register/customer", {
         name: formData.name,
         phone: formData.phone,
         email: formData.email,

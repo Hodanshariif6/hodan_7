@@ -15,14 +15,14 @@ function UpdateNews() {
 
   const fetchNews = async () => {
     try {
-      const res = await axios.get(`https://full-booking-3.onrender.com/readSingle/New/${id}`);
+      const res = await axios.get(`https://hodan-7.onrender.com/readSingle/New/${id}`);
       const news = Array.isArray(res.data) ? res.data[0] : res.data;
 
       if (!news) throw new Error("News not found");
 
       setName(news.name);
       setDescription(news.desc); 
-      setPreview(`https://full-booking-3.onrender.com/allImages/${news.img}`); 
+      setPreview(`https://hodan-7.onrender.com/allImages/${news.img}`); 
     } catch (err) {
       console.error(err);
     }
@@ -45,7 +45,7 @@ o
         formData.append("img", imgFile); 
       }
 
-      await axios.put(`https://full-booking-3.onrender.com/update/new/${id}`, formData, {
+      await axios.put(`https://hodan-7.onrender.com/update/new/${id}`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 

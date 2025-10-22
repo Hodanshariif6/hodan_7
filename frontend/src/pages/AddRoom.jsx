@@ -26,7 +26,7 @@ function AddRoom() {
     formData.append("img", img); 
 
     try {
-      await axios.post("https://full-booking-3.onrender.com/create/Room", formData, {
+      await axios.post("https://hodan-7.onrender.com/create/Room", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       toast.success("Room added successfully 🚀");

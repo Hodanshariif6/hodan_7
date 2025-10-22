@@ -24,7 +24,7 @@ export default function LoginAdmin() {
       const trimmedEmail = formData.email.trim();
       const trimmedPassword = formData.password.trim();
 
-      const res = await axios.post("https://full-booking-3.onrender.com/login/admin", {
+      const res = await axios.post("https://hodan-7.onrender.com/login/admin", {
         email: trimmedEmail,
         password: trimmedPassword,
       });

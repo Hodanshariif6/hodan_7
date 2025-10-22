@@ -13,7 +13,7 @@ function Room() {
 
   const handleReadData = () => {
     axios
-      .post("https://full-booking-3.onrender.com/read/Room")
+      .post("https://hodan-7.onrender.com/read/Room")
       .then((res) => {
         setData(res.data);
       })
@@ -74,7 +74,7 @@ function Room() {
               {/* Room Image */}
               <div className="relative">
                 <img
-                  src={`https://full-booking-3.onrender.com/allImages/${items.prImage}`}
+                  src={`https://hodan-7.onrender.com/allImages/${items.prImage}`}
                   alt={items.name}
                   className="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -148,7 +148,7 @@ function Room() {
               </h2>
 
               <img
-                src={`https://full-booking-3.onrender.com/allImages/${selectedRoom.prImage}`}
+                src={`https://hodan-7.onrender.com/allImages/${selectedRoom.prImage}`}
                 alt={selectedRoom.name}
                 className="w-full h-40 object-cover rounded mb-4"
               />
